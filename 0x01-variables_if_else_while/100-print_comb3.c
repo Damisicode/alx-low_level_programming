@@ -15,6 +15,7 @@ int main(void)
 	if (k < j)
 	{putchar(k + '0');
 	putchar(j + '0');
+	}
 	if (i < 89)
 	{putchar(',');
 	putchar(' ');
@@ -23,5 +24,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-	}
 }
