@@ -6,7 +6,7 @@
  * main - main
  * Description: function that randomly assign numbers to n and
  * determine if the number is positive or negative
- * return 0
+ * Return: 0
  */
 
 int main(void)
