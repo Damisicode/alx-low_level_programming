@@ -14,7 +14,9 @@ while (i < 10)
 i++;
 }
 while (c < 'g')
-putchar (c);
+{putchar (c);
+c++;
+}
 putchar('\n');
 return (0);
 }
