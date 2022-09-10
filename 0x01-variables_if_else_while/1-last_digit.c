@@ -3,18 +3,18 @@
 #include <stdio.h>
 
 /**
- * main - main 
+ * main - main
  * Description: function that randomly assign numbers to n,
  * determine if the last digit is greater than 5,
  * equal to 0, or less than 6.
- * returns 0
+ * Return: 0
  */
 
 int main(void)
 {	int n, last;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	last = (n - ((n/10) * 10));
+	last = (n - (( n / 10) * 10));
 	if (last > 5)
 		printf("Last digit of %d is %d and is greater than 5\n", n, last);
 	else if (last == 0)
