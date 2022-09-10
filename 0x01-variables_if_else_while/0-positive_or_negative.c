@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
- * Main - main 
+ * main - main
  * Description: function that randomly assign numbers to n and
  * determine if the number is positive or negative
- * returns 0
+ * return 0
  */
 
 int main(void)
