@@ -1,10 +1,8 @@
 #include "main.h"
 
 /**
- * main: print out _putchar
- *
- * Description: print out "_putchar"
- *
+ * main - Print "Holberton" followed by a new line.
+ * Description: You are not allowed to include standard libraries.
  * Return: 0
  */
 
