@@ -1,22 +1,21 @@
 #include "main.h"
 
 /**
- * main - main block
+ * main: main block
  * Description: print out "_putchar"
  * Result: 0
  */
 
 int main(void)
 {
-  char str[] = "_putchar";
-  int i = 0;
+char str[] =  "_putchar";
+int i = 0;
 
-  while (str[i] != '\0')
-    {
-      
-  _putchar(str[i]);
-  i++;
-    }
-  _putchar('\n');
-  return (0);
+while (str[i] != '\0')
+{      
+_putchar(str[i]);
+i++;
+}
+_putchar('\n');
+return (0);
 }
