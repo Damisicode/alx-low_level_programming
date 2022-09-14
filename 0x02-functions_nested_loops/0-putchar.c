@@ -8,11 +8,8 @@
 
 int main(void)
 {
-  char str[10] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\n','\0'};
-  int i=0;
-  while (str[i] != '\0')
-{  _putchar(str[i]);
-  i++;
- }
+  char str = "_putchar";
+  _putchar(str);
+  putchar('\n');
   return (0);
 }
