@@ -16,7 +16,7 @@ void print_most_numbers(void)
 	i++;
 	if ((i / 2 == 1) && (i / 2 == 2))
 		continue;
-		_putchar(i + '0');
+	_putchar(i + '0');
 	}
 	_putchar('\n');
 }
