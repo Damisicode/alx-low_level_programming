@@ -8,15 +8,8 @@
  */
 
 int _isupper(int c);
-{
-	int diff = 'a' - 'A';
+{{
 	if ((c < 90) & (c > 64))
-	{
 		return (1);
-	}
-
-	else
-	{
-	        return (0);
-	}
+	return (0);
 }
