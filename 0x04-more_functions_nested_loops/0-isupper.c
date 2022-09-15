@@ -2,16 +2,14 @@
 
 /**
  * _isupper - function that checks for uppercase character
- * @c: character c
+ * @c: int type number
  * Description: Provide function similar to the standard library isupper
  * Return: 1 if c is uppercase and returns 0 otherwise
  */
 
 int _isupper(int c)
-{int result;
-if ((c < 90) & (c > 64))
-result = 1;
-else
-result = 0;
-return (result);
+{
+if ((c < 91) & (c > 64))
+return(1);
+return (0);
 }
