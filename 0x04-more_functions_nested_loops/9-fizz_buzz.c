@@ -9,7 +9,8 @@
 
 int main(void)
 {
-	for (int i = 1; i < 101; i++)
+	int i = 1;
+	while (i < 101)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
 			printf("FizzBuzz");
@@ -19,6 +20,8 @@ int main(void)
 			printf("Buzz");
 		else
 			printf("%d", i);
+		printf(" ");
+		i++;
 	}
 	return (0);
 }
