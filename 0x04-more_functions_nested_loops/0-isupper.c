@@ -7,7 +7,10 @@
  */
 
 int _isupper(int c)
-{if ((c < 91) & (c > 64))
-return(1);
-return (0);
+{int result;
+if ((c < 91) & (c > 64))
+result = 1;
+else
+result = 0;
+return (result);
 }
