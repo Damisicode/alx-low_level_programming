@@ -3,7 +3,6 @@
 /**
  * _isupper - function that checks for uppercase character
  * @c: int type number
- * Description: Provide function similar to the standard library isupper
  * Return: 1 if c is uppercase and returns 0 otherwise
  */
 
