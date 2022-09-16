@@ -1,47 +1,108 @@
 #include "main.h"
 
 /**
- * print_number - Function that prints an integer.
- * @n: int type number
- * Description: Can only use _putchar to print.
+ * print_number - prints an integer
+ * thousand - prints out numbers in thousands
+ * hundred - prints out numbers in hundreds
+ * ten_thousand - prints out numbers in ten thousands
+ * tens - prints out numbers in tens
+ * @n: integer parameter
+ * Return: 0
  */
+
+void thousand(int n);
+void tens(int n);
+void hundred(int n);
+void ten_thousand(int n);
+
 void print_number(int n)
 {
-	long m; /* power of 10 */
-	int c; /* boolean check */
-	long num; /* convert int to long */
-
-	num = n;
-	/* negatives */
-	if (num < 0)
+	if (n < 0)
 	{
-		num *= -1;
 		_putchar('-');
+		n *= -1;
 	}
 
-	/* count up */
-	m = 1;
-	c = 1;
-	while (c)
+	if (((n > 9) && (n < 100)) || ((n < -9) && (n > -100)))
+		hundred(n);
+
+	else if (((n > 99) && (n < 1000)) || ((n < -99) && (n > -1000)))
+		thousand(n);
+
+	else if (((n > 999) && (n < 10000)) || ((n < -999) && (n > -10000)))
+		ten_thousand(n);
+	else
+		tens(n);
+}
+
+void thousand(int n)
+{
+	int l;
+
+	_putchar ((n / 100) + '0');
+	l = (n % 100);
+	if (((l > 9) && (l < 100)) || ((n < -9) && (n > -100)))
 	{
-		if (num / (m * 10) > 0)
-			m *= 10;
-		else
-			c = 0;
+		_putchar ((l / 10) + '0');
+		_putchar ((l % 10) + '0');
 	}
 
-	/* count down */
-	while (num >= 0)
+	else
 	{
-		if (m == 1)
+		_putchar ('0');
+		_putchar (l + '0');
+	}
+}
+
+void tens(int n)
+{
+	_putchar(n + '0');
+}
+
+void hundred(int n)
+{
+	_putchar ((n / 10) + '0');
+	_putchar ((n % 10) + '0');
+}
+
+void ten_thousand(int n)
+{
+	int l;
+
+	_putchar ((n / 1000) + '0');
+	l = (n % 1000);
+
+	if (((l > 99) && (l < 1000)) || ((l < -99) && (l > -1000)))
+	{
+		int m;
+
+		_putchar ((l / 100) + '0');
+		m = (n % 100);
+
+		if (((m > 9) && (m < 100)) || ((m < -9) && (m > -100)))
 		{
-			_putchar(num % 10 + '0');
-			num = -1;
+			_putchar ((m / 10) + '0');
+			_putchar ((m % 10) + '0');
 		}
+
 		else
 		{
-			_putchar((num / m % 10) + '0');
-			m /= 10;
+			_putchar('0');
+			_putchar(m + '0');
 		}
+	}
+
+	else if (((l > 9) && (l < 100)) || ((l < -9) && (l > -100)))
+	{
+			_putchar ('0');
+			_putchar ((l / 10) + '0');
+			_putchar ((l % 10) + '0');
+	}
+
+	else
+	{
+		_putchar ('0');
+		_putchar ('0');
+		_putchar (l + '0');
 	}
 }
