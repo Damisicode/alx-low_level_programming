@@ -1,12 +1,8 @@
 #include "main.h"
 
 /**
- * print_number - prints an integer
- * thousand - prints out integer numbers in thousands
- * hundred - prints out integer numbers in hundreds
- * ten_thousand - prints out integer numbers in ten thousands
- * tens - prints out integer numbers in tens
- * @n: integer parameter
+ * print_number - Function prints an integer
+ * @n: int type number
  * Return: 0
  */
 
@@ -35,6 +31,11 @@ void print_number(int n)
 		tens(n);
 }
 
+/**
+ * thousand - Function prints out thousand
+ * @n: int type number
+ */
+
 void thousand(int n)
 {
 	int l;
@@ -54,16 +55,31 @@ void thousand(int n)
 	}
 }
 
+/**
+ * tens - prints integer numbers in tens
+ * @n: int type number
+ */
+
 void tens(int n)
 {
 	_putchar(n + '0');
 }
+
+/**
+ * hundred - prints integer numbers in hundreds
+ * @n: int type number
+ */
 
 void hundred(int n)
 {
 	_putchar ((n / 10) + '0');
 	_putchar ((n % 10) + '0');
 }
+
+/**
+ * ten_thousand - prints integer numbers in ten thousands
+ * @n: int type number
+ */
 
 void ten_thousand(int n)
 {
