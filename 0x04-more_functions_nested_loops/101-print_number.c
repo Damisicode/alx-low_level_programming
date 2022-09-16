@@ -2,10 +2,10 @@
 
 /**
  * print_number - prints an integer
- * thousand - prints out numbers in thousands
- * hundred - prints out numbers in hundreds
- * ten_thousand - prints out numbers in ten thousands
- * tens - prints out numbers in tens
+ * thousand - prints out integer numbers in thousands
+ * hundred - prints out integer numbers in hundreds
+ * ten_thousand - prints out integer numbers in ten thousands
+ * tens - prints out integer numbers in tens
  * @n: integer parameter
  * Return: 0
  */
@@ -94,9 +94,9 @@ void ten_thousand(int n)
 
 	else if (((l > 9) && (l < 100)) || ((l < -9) && (l > -100)))
 	{
-			_putchar ('0');
-			_putchar ((l / 10) + '0');
-			_putchar ((l % 10) + '0');
+		_putchar ('0');
+		_putchar ((l / 10) + '0');
+		_putchar ((l % 10) + '0');
 	}
 
 	else
