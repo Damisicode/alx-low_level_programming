@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _puts - prints a string followed by newline
- * @str: character array to be printed
+ * print_rev - prints a string in reverse order followed by newline
+ * @s: character array to be printed
  */
 
 void print_rev(char *s)
