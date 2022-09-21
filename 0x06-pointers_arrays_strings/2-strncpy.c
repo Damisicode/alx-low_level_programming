@@ -20,6 +20,7 @@ char *_strncpy(char *dest, char *src, int n)
 		*(dest + l) = src[j];
 	if (j < n)
 	dest[l] = '\0';
-
+	dest[l] = '\0';
+	
 	return (dest);
 }
