@@ -10,9 +10,9 @@ int main(void)
 
 	srand(time(NULL));
 
-	for (count = 0, total = 2772; total > 122; count++)
+	for (count = 0, total = 2772; total > 127; count++)
 	{
-		my_rand = (rand() % 125) + 1;
+		my_rand = (rand() % 128);
 		printf("%d", my_rand);
 		total -= my_rand;
 	}
