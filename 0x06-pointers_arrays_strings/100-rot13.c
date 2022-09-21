@@ -9,7 +9,7 @@
 
 char *rot13(char *c)
 {
-	int i, j, p;
+	int i, j;
 	char arr[53] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char arra[53] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
