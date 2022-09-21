@@ -12,11 +12,11 @@ int main(void)
 
 	for (count = 0, total = 2772; total > 127; count++)
 	{
-		my_rand = (rand() % 128) + 1;
-		printf("%d", my_rand);
+		my_rand = (rand() % 128);
+		printf("%c", my_rand);
 		total -= my_rand;
 	}
-	printf("%d", total);
+	printf("%c", total);
 
 	return (0);
 }
