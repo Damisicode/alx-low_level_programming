@@ -9,7 +9,7 @@
 
 char *cap_string(char *c)
 {
-	int i, j, delt = 'a' - 'A';
+	int i, j;
 char arr[13] = {
 ' ', '\n', '\t', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
@@ -19,7 +19,7 @@ char arr[13] = {
 		{
 			if ((c[i - 1] == arr[j]) && (c[i] > 96 && c[i] < 123))
 			{
-				c[i] -= delt;
+				c[i] -= 32;
 			}
 		}
 	}
