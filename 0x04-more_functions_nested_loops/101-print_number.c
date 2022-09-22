@@ -32,13 +32,7 @@ void print_number(int n)
 			k *= 10;
 		_putchar(m / k + '0');
 		m %= k;
-		/*if (m / k < k)
-			while (m / k < k)
-			{
-				_putchar('0');
-				k /= 10;
-				power--;
-				}*/
+
 		power--;
 	}
 }
