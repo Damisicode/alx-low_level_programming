@@ -7,7 +7,7 @@
 
 void print_number(int n)
 {
-	int i, power, l, k, j, m;
+	int power, l, k, j, m;
 
 	if (n < 0)
 	{
