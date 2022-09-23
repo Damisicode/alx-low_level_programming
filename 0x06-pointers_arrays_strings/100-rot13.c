@@ -16,10 +16,10 @@ char *rot13(char *c)
 	for (i = 0; c[i] != '\0'; i++)
 		for (j = 0; j < 52; j++)
 			if (c[i] == arr[j])
-			  {
+			{
 				c[i] = arra[j];
 				break;
-			  }
+			}
 
 	return (c);
 }
