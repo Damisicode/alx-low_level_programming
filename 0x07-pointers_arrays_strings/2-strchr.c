@@ -9,7 +9,7 @@
 
 char *_strchr(char *s, char c)
 {
-	char ch[100];
+	char ch[1000];
 	char *ptr;
 	unsigned int i, j, l;
 
