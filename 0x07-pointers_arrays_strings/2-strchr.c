@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strchr(char *s, char c)
+ * *_strchr - return first occurence of c in string s
  * @s: charater string
  * @c: character to be located
  * Return: pointer to first location of c
