@@ -9,7 +9,7 @@
 
 char *_strchr(char *s, char c)
 {
-	int i;
+	unsigned int i;
 	char *p;
 
 	p = s;
