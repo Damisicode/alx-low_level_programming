@@ -13,10 +13,12 @@ int is_prime_number(int n)
 
 	if (n <= 1)
 		return (0);
-	return (is_prime(n, start));
+	return (prime(n, start));
 }
+	
 
-/**
+
+       /**
  * prime - returns 1 if n is prime
  * @n: integer to be checked
  * @start: initiation

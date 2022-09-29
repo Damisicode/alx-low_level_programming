@@ -34,7 +34,7 @@ void checker(char *s, int start, int end, int *res)
 			*res *= 1;
 		else
 			*res *= 0;
-		check(s , start + 1, end - 1, res);
+		checker(s , start + 1, end - 1, res);
 	}
 }
 
@@ -54,5 +54,5 @@ int _strlen_recursion(char *s)
 		len++;
 		len += _strlen_recursion(s + 1);
 	}
-	return (sum);
+	return (len);
 }
