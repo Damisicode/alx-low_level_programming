@@ -5,7 +5,6 @@
  * @n: integer
  * Return: square root of integer
  */
-int _sqrt(int n, int num);
 
 int _sqrt_recursion(int n)
 {
