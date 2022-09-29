@@ -1,5 +1,5 @@
 #include "main.h"
-	
+
 /**
  * prime - returns 1 if n is prime
  * @n: integer to be checked
