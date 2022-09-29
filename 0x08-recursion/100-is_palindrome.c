@@ -34,7 +34,7 @@ void checker(char *s, int start, int end, int *res)
 			*res *= 1;
 		else
 			*res *= 0;
-		checker(s , start + 1, end - 1, res);
+		checker(s, start + 1, end - 1, res);
 	}
 }
 

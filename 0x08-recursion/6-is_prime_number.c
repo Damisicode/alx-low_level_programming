@@ -5,7 +5,6 @@
  * @n: integer
  * Return: 1 if number is prime and 0 otherwise
  */
-int prime(int n, int start);
 
 int is_prime_number(int n)
 {
@@ -16,9 +15,7 @@ int is_prime_number(int n)
 	return (prime(n, start));
 }
 	
-
-
-       /**
+/**
  * prime - returns 1 if n is prime
  * @n: integer to be checked
  * @start: initiation
