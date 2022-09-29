@@ -41,7 +41,7 @@ void checker(char *s, int start, int end, int *res)
 
 /**
  * is_palindrome - determine if a string is the same when reversed
- * @string: string to be checked
+ * @s: string to be checked
  * Return: 1 if the string is palindrome and 0 if the string is not palindrome
  */
 
