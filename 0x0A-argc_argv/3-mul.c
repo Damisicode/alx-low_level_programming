@@ -8,15 +8,15 @@
  * Return: Always 0
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i, mul = 1;
 
 	if (argc == 3)
 	{
-		for (i = 0; i < argc; i++)
-			sum += atoi(argv[i]);
-		printf("%d", sum);
+		for (i = 1; i < argc; i++)
+			mul *= atoi(argv[i]);
+		printf("%d", mul);
 	}
 
 	else
