@@ -54,6 +54,7 @@ int checker(int num)
 int main(int argc, char *argv[])
 {
 	int num;
+
 	if (argc == 2)
 	{
 		num = atoi(argv[1]);
