@@ -6,34 +6,33 @@
  * main - main block
  * @argc: integer argument count
  * @argv: array of arguments
- * Return: Always 0
+ * @argv: argument vector, array of strings
+ * Description: If no number is passed to program, print 0.
+ * If one of the numbers contain non-digits, print Error.
+ * Return: 1 if error, 0 if function runs properly.
  */
 
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int total, i;
 	char *p;
 	int num;
 
-	if (argc == 1)
-		printf("0\n");
-	else
+	total = 0;
+	if (argc > 1)
 	{
-		for (i = 1; i < argc; i++)
+		for (i = 1; argv[i]; i++)
 		{
 			num = strtol(argv[i], &p, 10);
 			if (!*p)
-			{
-				sum += atoi(argv[i]);
-			}
+				total += num;
 			else
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
-		printf("%d\n", sum);
 	}
-
+	printf("%d\n", total);
 	return (0);
 }
