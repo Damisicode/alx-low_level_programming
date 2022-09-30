@@ -1,0 +1,1 @@
+Repository for my static libraries tasks
