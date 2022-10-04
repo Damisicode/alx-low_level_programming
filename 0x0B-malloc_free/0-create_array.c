@@ -6,7 +6,6 @@
  * with a specific char
  * @size: unsigned integer for size of array
  * @c: character to be initialized
- * Return: duplicated character
  */
 
 char *create_array(unsigned int size, char c)
@@ -16,7 +15,7 @@ char *create_array(unsigned int size, char c)
 
 	arr = malloc(size * sizeof(char));
 
-	if (arr == NULL)
+	if (arr == NULL || size == 0)
 		return ('\0');
 
 	else
