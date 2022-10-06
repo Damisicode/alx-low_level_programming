@@ -73,6 +73,7 @@ char **strtow(char *str)
 			if (ptr[n] == NULL)
 				return (NULL);
 
+			m = 0;
 			while (m < size)
 			{
 				ptr[n][m] = str[i];
