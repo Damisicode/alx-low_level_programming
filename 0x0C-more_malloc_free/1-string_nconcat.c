@@ -1,0 +1,50 @@
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ * string_nconcat - concatenates two strings
+ * @s1: character to be printed
+ * @s2: character to be concatenated
+ * @n: unsigned integer of the allocated size
+ * Return: cconcatenated string
+ */
+
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+	char *ptr;
+	int i, j, k, s1_len, s2_len, length;
+
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	for (i = 0; s1[i]; i++)
+		;
+	s1_len = i;
+
+	for (k = 0; s2[k]; k++)
+		;
+	s2_len = k;
+
+	if (s2_len < (int)n)
+		length = s2_len;
+	else if (s2_len >= (int)n)
+		length = n;
+
+	ptr = malloc(sizeof(char) * (s1_len + length + 1));
+
+	if (ptr != NULL)
+	{
+		for (i = 0; i < s1_len; i++)
+			ptr[i] = s1[i];
+
+		for (i = s1_len, j = 0; j < length; i++, j++)
+			ptr[i] = s2[j];
+		ptr[s1_len + length] = '\0';
+	}
+
+	else
+		return (NULL);
+
+	return (ptr);
+}
