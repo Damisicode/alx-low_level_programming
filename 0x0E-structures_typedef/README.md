@@ -1,0 +1,1 @@
+Repository for structures and typedef exercises
