@@ -19,6 +19,6 @@ int main(int argc, char *argv[])
 	result = get_op_func(argv[2])(first, third);
 
 	if (result != '\0')
-		printf("%d", result);
+		printf("%d\n", result);
 	return (0);
 }
