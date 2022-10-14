@@ -25,5 +25,10 @@ int main(int argc, char *argv[])
 
 	if (result != '\0')
 		printf("%d\n", result);
+	else
+	{
+	printf("Error\n");
+	exit(99);
+	}
 	return (0);
 }
