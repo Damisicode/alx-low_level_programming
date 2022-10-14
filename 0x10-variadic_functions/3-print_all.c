@@ -4,7 +4,7 @@
 
 /**
  * printchr - prints character datatype
- * @list - va_list passed to the function
+ * @list: va_list passed to the function
  */
 
 void printchr(va_list list)
@@ -67,7 +67,7 @@ void print_all(const char * const format, ...)
 
 	i = 0;
 	sep = "";
-	va_start (ap, format);
+	va_start(ap, format);
 	while (format != NULL && format[i / 4] != '\0')
 	{
 		j = i % 4;
