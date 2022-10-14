@@ -14,6 +14,11 @@ int main(int argc, char *argv[])
 	int result, first, third;
 	(void)argc;
 
+	if (argc != 4)
+	{
+		printf("Error\n");
+		exit(98);
+	}
 	first = atoi(argv[1]);
 	third = atoi(argv[3]);
 	result = get_op_func(argv[2])(first, third);
