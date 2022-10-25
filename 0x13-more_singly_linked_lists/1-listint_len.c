@@ -11,7 +11,7 @@
 int listint_len(const listint_t *h)
 {
 	listint_t *temp;
-	int count;
+	unsigned int count;
 
 	count = 0;
 	temp = malloc(sizeof(listint_t));
