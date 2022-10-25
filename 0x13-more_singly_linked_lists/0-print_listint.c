@@ -16,7 +16,10 @@ int print_listint(const listint_t *h)
 	count = 0;
 	temp = malloc(sizeof(listint_t));
 	if (temp == NULL)
-		return (NULL);
+	{
+		printf("Error\n");
+		return (1);
+	}
 	temp->n = h->n;
 	temp->next = h->next;
 	while (temp != NULL)
