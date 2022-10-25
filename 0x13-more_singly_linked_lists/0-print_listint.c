@@ -28,6 +28,7 @@ int print_listint(const listint_t *h)
 		temp = temp->next;
 		count++;
 	}
+	free(temp);
 
 	return (count);
 }
