@@ -8,7 +8,7 @@
  * Return: Number of elements
  */
 
-int listint_len(const listint_t *h)
+size_t listint_len(const listint_t *h)
 {
 	listint_t *temp;
 	unsigned int count;
