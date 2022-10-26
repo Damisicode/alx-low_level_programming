@@ -7,16 +7,18 @@
  * Return: sum of all elements of a linked list and return 0 if list is empty
  */
 
-int sum_listint(listint_t *head)
+size_t sum_listint(listint_t *head)
 {
 	int sum = 0;
+	listint *temp;
 
-	while (head && head->next != NULL)
+	temp = head;
+	while (temp && temp->next != NULL)
 	{
-		sum += head->n;
-		head = head->next;
+		sum += temp->n;
+		temp = temp->next;
 	}
-	sum += head->n;
+	sum += temp->n;
 
 	return (sum);
 }
