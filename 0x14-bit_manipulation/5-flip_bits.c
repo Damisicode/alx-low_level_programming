@@ -11,25 +11,17 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int temp_n;
-	unsigned long int temp_m;
-	int count = 0, i, j, greater;
+	unsigned long int temp;
+	int counter;
 
-	temp_n = n;
-	temp_m = m;
-	for (i = 1; (temp_n >>= 1) > 0; i++)
-		;
+	temp = n ^ m;
+	counter = 0;
 
-	for (j = 1; (temp_m >>= 1) > 0; j++)
-		;
-	greater = i > j ? i : j;
-	for (; greater >= 0; greater--)
+	while (temp)
 	{
-		if (((n >> greater) & 1) != ((m >> greater) & 1))
-		{
-			count++;
-		}
+		counter++;
+		temp = temp & (temp - 1);
 	}
 
-	return (count);
+	return (counter);
 }
