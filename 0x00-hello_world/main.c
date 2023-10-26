@@ -6,7 +6,7 @@
  * Return: Always 0 (success)
  */
 
-inr main(void)
+int main(void)
 {
         return (0);
 }
